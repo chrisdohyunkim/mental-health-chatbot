@@ -1,8 +1,20 @@
-<h1>🌱 Mental Health Companion</h1>
+<!-- Mental Health Resource Links -->
+<div class="resources">
+  <h2>These are some resources for you, just in case you need some extra help.</h2>
+  <div class="resources">
+    <a href="https://www.mentalhealth.gov/" target="_blank">MentalHealth.gov</a>
 
-<div class="chat-box">
-  <p><strong>You:</strong> <%= params[:message] %></p>
-  <p><strong>Companion:</strong> <%= @bot_reply %></p>
-</div>
+    <a href="https://www.nami.org/Home" target="_blank">NAMI</a>
 
-<a href="/">Would you like to talk about other things on your mind?</a>
+    <a href="https://suicidepreventionlifeline.org/" target="_blank">Suicide Prevention Lifeline</a>
+
+    <a href="https://www.psychologytoday.com/us/therapists" target="_blank">Find a Therapist</a>
+  </div>
+
+  <h1>Here's what Opu has to say.</h1>
+
+  <div class="chat-box">
+    <p><%= @bot_reply %></p>
+  </div>
+
+  <a href="/">Would you like to talk about other things on your mind?</a>

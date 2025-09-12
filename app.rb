@@ -17,7 +17,7 @@ post "/chat" do
 
   x = c.generate!
 
-  @bot_reply = x
+  @bot_reply = x.fetch(:content)
 
   erb(:chat)
 end
