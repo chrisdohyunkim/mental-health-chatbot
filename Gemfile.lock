@@ -13,6 +13,13 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
+    ai-chat (0.2.4)
+      base64 (> 0.1.1)
+      json (~> 2.0)
+      marcel (~> 1.0)
+      openai (~> 0.16)
+      tty-spinner (~> 0.9.3)
+    amazing_print (1.8.1)
     appdev_support (0.2.1)
       tabulo
     base64 (0.2.0)
@@ -36,6 +43,7 @@ GEM
     color_namer (0.1.0)
       color (>= 1.4.1)
     concurrent-ruby (1.2.2)
+    connection_pool (2.5.4)
     crack (0.4.5)
       rexml
     debug_inspector (1.1.0)
@@ -83,6 +91,7 @@ GEM
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
     logger (1.6.6)
+    marcel (1.0.4)
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.5)
@@ -101,6 +110,8 @@ GEM
       faraday (>= 1, < 3)
       sawyer (~> 0.9)
     oj (3.13.23)
+    openai (0.23.1)
+      connection_pool
     pry (0.14.2)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -162,7 +173,10 @@ GEM
       tty-screen (= 0.8.1)
       unicode-display_width (~> 2.2)
     tilt (2.1.0)
+    tty-cursor (0.7.1)
     tty-screen (0.8.1)
+    tty-spinner (0.9.3)
+      tty-cursor (~> 0.7)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.4.2)
@@ -185,6 +199,8 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  ai-chat
+  amazing_print
   appdev_support
   better_errors
   binding_of_caller
