@@ -12,9 +12,10 @@ end
 post "/chat" do
   user_message = params[:message]
 
-  c = AI::Chat.new
-  c.add("You are a compassionate mental health therapist who is good at active listening and pointing people towards the right resources for mental health issues", role: "system")
-  c.add(user_message, role: "user")
+c = AI::Chat.new(api_key: ENV["OPENAI_API_KEY"])
+
+c.add("You are a compassionate mental health therapist who is good at active listening and pointing people towards the right resources for mental health issues", role: "system")
+c.add(user_message, role: "user")
 
   x = c.generate!
 
