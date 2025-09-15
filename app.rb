@@ -3,6 +3,7 @@ require "sinatra/reloader"
 require "ai/chat"
 require "dotenv/load"
 require "amazing_print"
+require "erb"
 
 get "/" do
   erb(:index)
